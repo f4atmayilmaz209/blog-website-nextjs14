@@ -19,10 +19,13 @@ const BlogPage = () => {
       setKeyword(keyword);
       setPosts(filtered);
       if(keyword==="" || keyword===null || keyword===undefined){
+        setKeyword("")
         setControl(true)
       }
     } 
-
+    if(setKeyword===""){
+      setControl(true)
+    }
     useEffect(()=>{
       const handleSubmit = async () => {
 
