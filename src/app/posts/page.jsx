@@ -33,13 +33,14 @@ const BlogPage = () => {
           })
           const result=response.data
           setPosts(result?.data)
-       
+          
         } catch (e) {
           console.log('error',e)
           
         } 
       };
       handleSubmit()
+      window.location.reload();
     },[control])
     useEffect(()=>{
       const handleWord = async () => {
@@ -60,7 +61,7 @@ const BlogPage = () => {
       };
       handleWord()
     },[word])
-    console.log(word)
+
 
 
 
