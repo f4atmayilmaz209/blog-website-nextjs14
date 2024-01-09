@@ -1,13 +1,13 @@
 .container{
     display:flex;
-    width:700px !important;
+    width:1000px !important;
 }
 .textContainer{
     flex:1;
     display: flex;
     flex-direction: column;
     gap:20px;
-    width:700px !important;
+    width:1000px !important;
 }
 .brands{
     width:800px;
@@ -23,12 +23,12 @@
 }
 .title{
     font-size: 96px;
-    width:700px !important;
+    width:1000px !important;
 }
 
 .desc{
     font-size: 20px;
-    width:700px !important;
+    width:1000px !important;
 }
 .buttons{
     display:flex;
