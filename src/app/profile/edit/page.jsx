@@ -13,11 +13,11 @@ import { helperForUploadingImageToFirebase } from '../../../lib/utils/fire';
 
 const EditSection = () => {
     const {isAuthUser,setIsAuthUser}=useContext(GlobalContext)
-    const [firstName,setFirstName]=useState(isAuthUser.firstName);
-    const [lastName,setLastName]=useState(isAuthUser.lastName);
-    const [title,setTitle]=useState(isAuthUser.title);
-    const [picture,setPicture]=useState(isAuthUser.picture)
-    const [email,setEmail]=useState(isAuthUser.email)
+    const [firstName,setFirstName]=useState(isAuthUser?.firstName);
+    const [lastName,setLastName]=useState(isAuthUser?.lastName);
+    const [title,setTitle]=useState(isAuthUser?.title);
+    const [picture,setPicture]=useState(isAuthUser?.picture)
+    const [email,setEmail]=useState(isAuthUser?.email)
     const router=useRouter()
 
 
