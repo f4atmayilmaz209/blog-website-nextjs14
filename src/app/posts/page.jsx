@@ -15,7 +15,7 @@ const BlogPage = () => {
 
     const updateKeyword = (keyword) => {
       console.log("in here")
-      const filtered = posts?.filter(x => x.text.includes(keyword.toLowerCase()))
+      const filtered = posts?.filter(x => x.text.toLowerCase().includes(keyword.toLowerCase()))
       setKeyword(keyword);
       setPosts(filtered);
       if(keyword==="" || keyword===null || keyword===undefined){
