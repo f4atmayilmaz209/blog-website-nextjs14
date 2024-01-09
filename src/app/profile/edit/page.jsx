@@ -30,8 +30,6 @@ const EditSection = () => {
       }
     async function handleEditUser(e){
       e.preventDefault()
-
-      const formData={firstName,lastName,title,picture,email}
       const edituser=await updateUser(isAuthUser?.id,{firstName,lastName,title,picture,email})
 
       setIsAuthUser({

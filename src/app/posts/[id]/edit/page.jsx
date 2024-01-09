@@ -23,14 +23,12 @@ const EditPage = () => {
 
   async function handleImage(event) {
     const extractImageUrl = await helperForUploadingImageToFirebase(event.target.files[0])
-    console.log(extractImageUrl)
     setImage(extractImageUrl)
 
 
 }
   
   async function handleEditPost(){
-    const publishDate=new Date().toJSON()
     const editpost=await updatePost(params?.id,{image,text})
 
 

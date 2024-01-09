@@ -10,7 +10,6 @@ const UsersSection = () => {
     const [users,setUsers]=useState([{}])
     useEffect(() => {
         const fetchDatas=async()=>{
-          //apideki datanın başlangıçta Get metoduyla çekilmesi 
           const res=await getUsers()
           setUsers(res.data)
         };
