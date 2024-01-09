@@ -14,6 +14,7 @@ const BlogPage = () => {
     const [word,setWord]=useState("")
 
     const updateKeyword = (keyword) => {
+      console.log("in here")
       const filtered = posts?.filter(x => x.text.includes(keyword))
       setKeyword(keyword);
       setPosts(filtered);
