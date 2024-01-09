@@ -16,7 +16,7 @@ export default function AdminAddNewProduct() {
     const [text,setText]=useState('')
     const [likes,setLikes]=useState(0)
     const [tags,setTags]=useState([])
-    const [owner,setOwner]=useState(isAuthUser.id)
+    const [owner,setOwner]=useState(isAuthUser?.id || "sfsfsfs")
 
 
     async function handleImage(event) {

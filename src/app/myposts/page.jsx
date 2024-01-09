@@ -8,8 +8,8 @@ import { GlobalContext } from "../../authContext"
 
 const MyPosts = async() => {
     const {isAuthUser,setIsAuthUser}=useContext(GlobalContext)
-    console.log(isAuthUser.id)
-    const { data } = usePostByUser(isAuthUser.id);
+
+    const { data } = usePostByUser(isAuthUser?.id || "dadadadad");
 
   return (
 
