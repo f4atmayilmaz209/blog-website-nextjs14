@@ -26,7 +26,7 @@ const UsersSection = () => {
             
         {users?.data?.map((user,i)=>(
             <div key={i} className={styles.item}>
-                <Image width={100} height={100} src={user.picture} alt="" className={styles.avatar} /> 
+                <Image width={100} height={100} src={user?.picture} alt="" className={styles.avatar} /> 
             </div>
 
         ))}

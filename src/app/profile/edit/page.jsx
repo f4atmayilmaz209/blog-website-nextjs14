@@ -36,9 +36,9 @@ const EditSection = () => {
 
       setIsAuthUser({
         "title":`${edituser.title}`,
-        "firstName": `${edituser.firstName}`,
-        "lastName":  `${edituser.lastName}`,
-        "picture":  `${edituser.picture}`,
+        "firstName": `${edituser?.firstName}`,
+        "lastName":  `${edituser?.lastName}`,
+        "picture":  `${edituser?.picture}`,
 
       })
       

@@ -51,7 +51,7 @@ const ProfileSection = () => {
         };
     
     const handleDeletePost=async()=>{
-      const deleteuser=await deleteUser(isAuthUser.id)
+      const deleteuser=await deleteUser(isAuthUser?.id)
       setIsAuthUser(null)
 
       if(deleteuser){
@@ -68,24 +68,24 @@ const ProfileSection = () => {
             
             <div className={styles.loginpage}>
                 <span className={styles.signin}>Profile</span>
-                {isAuthUser ? <Image width={100} height={100} src={isAuthUser.picture} alt="" className={styles.avatar} /> :
+                {isAuthUser ? <Image width={100} height={100} src={isAuthUser?.picture} alt="" className={styles.avatar} /> :
                             <Image width={100} height={100} src={require("../../../public/avatar1.png")} alt="" className={styles.avatar}/>
                 }
                 <div className={styles.item}>
                     <label>Title:</label> 
-                    <span>{isAuthUser.title}</span>
+                    <span>{isAuthUser?.title}</span>
                 </div>
                 <div className={styles.item}>
                     <label>Email:</label> 
-                    <span>{isAuthUser.email}</span>
+                    <span>{isAuthUser?.email}</span>
                 </div>
                 <div className={styles.item}>
                     <label>Firstname:</label> 
-                    <span>{isAuthUser.firstName}</span>
+                    <span>{isAuthUser?.firstName}</span>
                 </div>
                 <div className={styles.item}>
                     <label>Lastname:</label> 
-                    <span>{isAuthUser.lastName}</span>
+                    <span>{isAuthUser?.lastName}</span>
                 </div>    
                 <div className={styles.EditText} onClick={handleEditPost}>
                 <CiEdit/>
