@@ -17,7 +17,7 @@ const BlogPage = () => {
       const filtered = posts?.filter(x => x.text.includes(keyword))
       setKeyword(keyword);
       setPosts(filtered);
-      if(keyword===""){
+      if(keyword==="" || keyword===null || keyword===undefined){
         setControl(true)
       }
     } 
@@ -40,7 +40,6 @@ const BlogPage = () => {
         } 
       };
       handleSubmit()
-      window.location.reload();
     },[control])
     useEffect(()=>{
       const handleWord = async () => {
