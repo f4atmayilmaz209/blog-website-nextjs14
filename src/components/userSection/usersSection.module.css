@@ -1,0 +1,28 @@
+.users{
+
+    height: 500px !important;
+    width:50% !important;
+    color:black;
+    display:flex;
+    flex-flow: row wrap;
+    margin-top:0 !important;
+    top:0 !important;
+    max-width: 50% !important;
+}
+.avatar{
+    object-fit:cover;
+    border-radius:50%;
+    border:2px solid green;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+
+
+}
+.item{
+    cursor:pointer;
+    margin: 2px !important;
+
+
+}

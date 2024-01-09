@@ -1,0 +1,87 @@
+.profilesec{
+    height: 100% !important;
+    width:50% !important;
+    color:black;
+    display:flex;
+    flex-direction:row;
+    margin-top:0 !important;
+    top:0 !important;
+   
+}
+.sigin{
+
+    align-items: center;
+    justify-content: center;
+    margin-bottom:30px;
+ 
+
+
+
+  }
+.loginpage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+
+
+}
+.form{
+display: flex;
+flex-direction: column;
+}
+.input{
+width:300px;
+padding:10px;
+border:1px solid green;
+border-radius:3px;
+margin-top:13px;
+}
+.loginButton{
+width:70px;
+height:30px;
+align-items: center;
+justify-content: center;
+margin-top:13px;
+
+}
+.avatar{
+    object-fit:cover;
+    border-radius:50%;
+    border:1px solid green;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+
+}
+.item{
+    margin-top:6px;
+    width:200px;
+    height:25px;
+    font-weight:bold;
+    color:gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.EditText{
+    position:absolute;
+    color:white !important;
+    margin-top:44px;
+    margin-left:10px !important;
+
+}
+.DeleteText{
+    position:absolute;
+    color:white !important;
+    margin-right: 52px !important;
+    margin-top:44px;
+
+}

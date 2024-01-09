@@ -1,0 +1,59 @@
+.container{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-bottom:20px;
+
+
+}
+
+.top{
+
+}
+.imgContainer{
+    width:90%;
+    height:250px;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    object-fit:cover;
+}
+.likedate{
+    margin-top:4px;
+    display:flex;
+    flex-direction: column;
+}
+.date{
+    font-size:10px;
+    margin-left:0px;
+    color:gray;
+
+}
+.title{
+    width:90%;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.desc{
+    margin-bottom:20px;
+    font-weight:300;
+    color:gray;
+    width:70%
+}
+.link{
+    text-decoration: underline;
+}
+.likes{
+    font-size:12px;
+    margin-left:0px;
+    margin-top:1px;
+}
+.bottom{
+    margin-left: 0px;
+    left:0px;
+    
+
+}

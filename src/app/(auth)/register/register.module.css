@@ -1,0 +1,54 @@
+.login{
+    width:50%;
+    height:70%;
+    padding:auto !important;
+    margin: auto !important
+}
+.sigin{
+
+    align-items: center;
+    justify-content: center;
+    margin-bottom:30px;
+
+
+  }
+.loginpage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+
+
+}
+.form{
+display: flex;
+flex-direction: column;
+}
+.input{
+width:300px;
+padding:10px;
+border:1px solid green;
+border-radius:3px;
+margin-top:13px;
+}
+.loginButton{
+width:70px;
+height:30px;
+align-items: center;
+justify-content: center;
+margin-top:13px;
+
+}
+.avatar{
+    object-fit:cover;
+    border-radius:50%;
+    border:1px solid green;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px !important;
+}
