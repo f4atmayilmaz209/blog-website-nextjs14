@@ -60,7 +60,7 @@ const BlogPage = () => {
       };
       handleWord()
     },[word])
-
+    console.log(keyword)
 
 
 
