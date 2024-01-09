@@ -10,22 +10,20 @@ import Tags from "../../components/tags/Tags";
 const BlogPage = () => {
     const [posts,setPosts]=useState();
     const [keyword,setKeyword]=useState('')
-    const [control,setControl]=useState(false)
+    const [control,setControl]=useState(1)
     const [word,setWord]=useState("")
 
     const updateKeyword = (keyword) => {
       console.log("in here")
-      const filtered = posts?.filter(x => x.text.includes(keyword))
+      const filtered = posts?.filter(x => x.text.includes(keyword.toLowerCase()))
       setKeyword(keyword);
       setPosts(filtered);
       if(keyword==="" || keyword===null || keyword===undefined){
         setKeyword("")
-        setControl(true)
+        setControl(control+1)
       }
     } 
-    if(setKeyword===""){
-      setControl(true)
-    }
+
     useEffect(()=>{
       const handleSubmit = async () => {
 
