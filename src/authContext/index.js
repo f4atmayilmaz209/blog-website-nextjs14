@@ -11,7 +11,7 @@ export default function GlobalState({children}){
 
     const [isAuthUser,setIsAuthUser]=useState();
     const getProducts = async() => {
-        const userdata=await getUserById("60d0fe4f5311236168a109d1")
+        const userdata=await getUserById("60d0fe4f5311236168a109d2")
         setIsAuthUser(userdata?.data)
     }
     useEffect(()=>{

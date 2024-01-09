@@ -57,7 +57,7 @@ const Links = () => {
             </>
 
           ) : (
-            <NavLink item={{title:"Login",path:"/login"}}/>
+            <NavLink item={{title:"Login",path:"/"}}/>
           )
         }
       </div>
