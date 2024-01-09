@@ -1,6 +1,7 @@
 .container{
     display:flex;
     width:1000px !important;
+    margin-top: 150px !important;
 }
 .textContainer{
     flex:1;
